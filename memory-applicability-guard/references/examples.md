@@ -4,7 +4,7 @@ Each example supplies structured classifications; the prototype does not infer t
 
 ## 1. Superseded pool memory
 
-Old memory: “曾在市中心游泳馆训练。” Current evidence: “已经搬家，旧游泳馆不再方便。” Mark the old training record `MEMORY_SOURCE/decisive=false` and the move record `USER_STATEMENT/decisive=true`. Use `relationship=SUPERSEDED`, `permission=ALLOWED`, and proposed action `USE`. Result: `REVISE`, `CLEAR_INAPPLICABLE`, `IGNORE`; the move record is decisive.
+Old memory: “The user previously trained at the downtown pool.” Current evidence: “The user has moved, and the old pool is no longer convenient.” Mark the old training record `MEMORY_SOURCE/decisive=false` and the move record `USER_STATEMENT/decisive=true`. Use `relationship=SUPERSEDED`, `permission=ALLOWED`, and proposed action `USE`. Result: `REVISE`, `CLEAR_INAPPLICABLE`, `IGNORE`; the move record is decisive.
 
 ## 2. Cross-domain no bridge
 

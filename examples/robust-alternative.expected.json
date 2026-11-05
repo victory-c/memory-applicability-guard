@@ -1,0 +1,16 @@
+{
+  "boundary": "Research-informed decision-support prototype; not production validated; no autonomous execution or high-risk approval.",
+  "decisive_evidence": [
+    {
+      "id": "CURRENT-3",
+      "kind": "APPLICABILITY",
+      "text": "The requested first deliverable is an outline; both later formats can use it."
+    }
+  ],
+  "guard_verdict": "REVISE",
+  "memory_action": "IGNORE",
+  "memory_state": "UNCERTAIN",
+  "next_step": "Take the robust action without relying on the disputed memory: Prepare a plain-text outline that can later be converted to either slides or a handout.",
+  "reason_code": "ROBUST_ACTION_AVAILABLE",
+  "resolution_source": "NONE"
+}

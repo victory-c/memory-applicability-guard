@@ -1,0 +1,24 @@
+{
+  "current_task": "Draft notes for a new workshop",
+  "candidate_memory": "The user preferred slides for an earlier workshop",
+  "proposed_memory_action": "IGNORE",
+  "permission": "ALLOWED",
+  "relationship": "EXPLICIT_TRANSFER",
+  "evidence_status": "SUFFICIENT",
+  "robust_action_available": false,
+  "risk": "LOW",
+  "evidence": [
+    {
+      "id": "MEMORY-1",
+      "text": "Earlier workshop: slides were preferred.",
+      "kind": "MEMORY_SOURCE",
+      "decisive": false
+    },
+    {
+      "id": "CURRENT-2",
+      "text": "The user explicitly asks to reuse the slide format from the earlier workshop for this new one.",
+      "kind": "USER_STATEMENT",
+      "decisive": true
+    }
+  ]
+}
