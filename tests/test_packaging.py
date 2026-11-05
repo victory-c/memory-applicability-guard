@@ -13,7 +13,7 @@ class PackagingMetadataTests(unittest.TestCase):
         text = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
         self.assertIn('name = "memory-applicability-guard"', text)
         self.assertIn('version = "1.0.0"', text)
-        self.assertIn('requires-python = ">=3.9"', text)
+        self.assertIn('requires-python = ">=3.10"', text)
         self.assertIn('memory-applicability-guard = "memory_applicability_guard:main"', text)
         self.assertIn('where = ["src"]', text)
         self.assertNotIn("jsonschema", text)

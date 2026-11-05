@@ -1,28 +1,19 @@
-# License Scope
+# License scope
 
 Copyright 2026 Jesse Zeng
 
-Unless otherwise stated:
+The current source code, complete `memory-applicability-guard/` skill package,
+tests, synthetic examples, scripts, and original documentation are available
+under the MIT License in `LICENSE`, as requested by the repository owner for
+this packaging update on September 29, 2026.
 
-- Source code, scripts, schemas, validators, evaluators, tests, and Skill
-  packages are licensed under the Apache License 2.0. The complete
-  `memory-applicability-guard/` Skill package, including its `SKILL.md`, agent
-  configuration, decision rules, references, and examples, is covered by this
-  license.
+Earlier published revisions remain available under their original Apache-2.0
+and CC BY 4.0 grants. The texts in `LICENSES/` and the historical
+`release/public_release_manifest_v1.0.0.json` are retained for provenance;
+they do not override the MIT grant for the current package. That historical
+manifest describes its original release, not the current file hashes or review
+status. `release/package_manifest.json` describes the current package.
 
-- Research reports, repository documentation, diagrams, presentation
-  materials, synthetic examples outside the Skill package, and the public
-  evaluation pack are licensed under Creative Commons Attribution 4.0
-  International (CC BY 4.0).
-
-- Private gold labels, credentials, unpublished research artifacts, and
-  third-party materials are not included in these grants.
-
-The licenses do not imply that the Memory Applicability Guard is
-production-validated, safe for autonomous high-stakes decisions, or endorsed
-by OpenAI or any other organization.
-
-The full license texts are available in `LICENSES/Apache-2.0.txt` and
-`LICENSES/CC-BY-4.0.txt`. The root `LICENSE` is a copy of the Apache License
-2.0 text for software-discovery compatibility. Where this file assigns a
-different license to a category of material, this scope statement controls.
+Private research artifacts, credentials, and third-party materials are not
+included in this grant. Linked external materials retain their own licenses.
+Licensing does not establish production validation or organizational endorsement.
