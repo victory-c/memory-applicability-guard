@@ -1,8 +1,7 @@
 """Installable wrapper around the Skill helper.
 
-The Skill package remains self-contained. This module loads that helper from a
-repository checkout so `pip install -e .` can expose a CLI without copying
-decision rules into a second source file.
+The skill remains self-contained. Wheels include its canonical helper; editable
+installs load the same file directly from the repository checkout.
 """
 
 from __future__ import annotations
@@ -12,11 +11,12 @@ from pathlib import Path
 
 
 def _load_helper():
-    helper = Path(__file__).resolve().parents[2] / "memory-applicability-guard/scripts/guard_decision.py"
+    helper = Path(__file__).resolve().parent / "_helper.py"
+    if not helper.is_file():
+        helper = Path(__file__).resolve().parents[2] / "memory-applicability-guard/scripts/guard_decision.py"
     if not helper.is_file():
         raise ImportError(
-            "guard_decision.py was not found. Install this package from a clone of "
-            "the repository with `pip install -e .`."
+            "The bundled skill helper was not found. Reinstall the package."
         )
     spec = importlib.util.spec_from_file_location("guard_decision", helper)
     if spec is None or spec.loader is None:

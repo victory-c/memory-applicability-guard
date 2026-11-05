@@ -1,0 +1,16 @@
+{
+  "boundary": "Research-informed decision-support prototype; not production validated; no autonomous execution or high-risk approval.",
+  "decisive_evidence": [
+    {
+      "id": "CURRENT-2",
+      "kind": "USER_STATEMENT",
+      "text": "The user explicitly asks to reuse the slide format from the earlier workshop for this new one."
+    }
+  ],
+  "guard_verdict": "REVISE",
+  "memory_action": "USE",
+  "memory_state": "CLEAR_APPLICABLE",
+  "next_step": "The recommendation may rely on the candidate memory within the evidenced scope and permission.",
+  "reason_code": "EXPLICIT_TRANSFER",
+  "resolution_source": "SUPPLIED_EVIDENCE"
+}
