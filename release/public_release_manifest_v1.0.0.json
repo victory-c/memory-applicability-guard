@@ -37,12 +37,12 @@
   },
   "skill_root": "memory-applicability-guard",
   "skill_files": [
-    {"path": "SKILL.md", "sha256": "088a2530aea04aa8e6bde85af5b3fcd84ad309ce1cbe87ff11a0bebd43697d50"},
+    {"path": "SKILL.md", "sha256": "a2c73d346a4f0a4f061136ae94b2e20b1605e8dfa44084ee6ae993242c87b9b3"},
     {"path": "agents/openai.yaml", "sha256": "1ce7346f3be5c42ccd173d0a92bebf991ff563bd63da74ff1a1b0f18ee0147c7"},
     {"path": "references/decision-model.md", "sha256": "004d173e3042f2cbfaef863b525e390c6c260f3bbed9afe8e48d858afe8d94a3"},
     {"path": "references/examples.md", "sha256": "f4156d58fff2cfcea06e1523672179b8ab4c87bffabf4243858570df120fdfdd"},
     {"path": "references/research-boundaries.md", "sha256": "fa8f92509457af22ea104c1c52c5ffc455eb4936f246399c17494636428506e5"},
-    {"path": "scripts/guard_decision.py", "sha256": "899ce4c9630367d95b06956ca444a280318928065ea7fd05cd39843299552456"}
+    {"path": "scripts/guard_decision.py", "sha256": "7f4063589e88fe0a64e3eaaaebeb4b8b43fdf3f98e671e56e7bcaba08cbbb616"}
   ],
   "source_provenance": {
     "approved_archive_sha256": "315b9e5a02f3651b3aa548819ffe67dc8ada9ddc38c2f710265ccf42428d2d80",
