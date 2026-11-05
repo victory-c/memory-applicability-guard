@@ -1,0 +1,37 @@
+{
+  "boundary": "Research-informed decision support only; not production validated.",
+  "historical_release": "release/public_release_manifest_v1.0.0.json",
+  "license": "MIT",
+  "package_name": "memory-applicability-guard",
+  "packaging_date": "2026-09-29",
+  "python_requires": ">=3.10",
+  "research_disposition": "STOP_AT_V07",
+  "schema_version": "1.0",
+  "skill_files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d43fbfaaa7df474be8223e5d87c7c08a1c219b5d591a2186841c69033cecf6e5"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "1ce7346f3be5c42ccd173d0a92bebf991ff563bd63da74ff1a1b0f18ee0147c7"
+    },
+    {
+      "path": "references/decision-model.md",
+      "sha256": "1f30d33ab2e0f672b64eb43e2e07df52e6451df0e31ee1f30ee6b9d7f36d2a60"
+    },
+    {
+      "path": "references/examples.md",
+      "sha256": "3737e20933b15aea35695bb80116f8b88a3529721720d58e7086df77a138406f"
+    },
+    {
+      "path": "references/research-boundaries.md",
+      "sha256": "fa8f92509457af22ea104c1c52c5ffc455eb4936f246399c17494636428506e5"
+    },
+    {
+      "path": "scripts/guard_decision.py",
+      "sha256": "92e811bc56b3a8d0cc1e0df2efed119b040cab2aad9a56347f2b9239bfc932ca"
+    }
+  ],
+  "skill_root": "memory-applicability-guard"
+}

@@ -1,0 +1,25 @@
+{
+  "current_task": "Prepare a reversible draft while the presentation format is undecided",
+  "candidate_memory": "The user preferred slides for an earlier workshop",
+  "proposed_memory_action": "USE",
+  "permission": "UNKNOWN",
+  "relationship": "UNKNOWN",
+  "evidence_status": "USER_RESOLVABLE",
+  "robust_action_available": true,
+  "risk": "LOW",
+  "evidence": [
+    {
+      "id": "MEMORY-1",
+      "text": "Earlier workshop: slides were preferred.",
+      "kind": "MEMORY_SOURCE",
+      "decisive": false
+    },
+    {
+      "id": "CURRENT-3",
+      "text": "The requested first deliverable is an outline; both later formats can use it.",
+      "kind": "APPLICABILITY",
+      "decisive": true
+    }
+  ],
+  "robust_action": "Prepare a plain-text outline that can later be converted to either slides or a handout."
+}
