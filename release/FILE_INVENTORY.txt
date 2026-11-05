@@ -1,3 +1,4 @@
+.github/workflows/tests.yml
 .gitignore
 LICENSE
 LICENSES/Apache-2.0.txt
@@ -7,6 +8,16 @@ NOTICE
 README.md
 SECURITY.md
 SHA256SUMS
+docs/devto-build-log.md
+docs/hacktoberfest-2026.md
+examples/README.md
+examples/explicit-transfer.expected.json
+examples/explicit-transfer.input.json
+examples/robust-alternative.expected.json
+examples/robust-alternative.input.json
+examples/run_examples.py
+examples/superseded-preference.expected.json
+examples/superseded-preference.input.json
 memory-applicability-guard/SKILL.md
 memory-applicability-guard/agents/openai.yaml
 memory-applicability-guard/references/decision-model.md
@@ -14,6 +25,10 @@ memory-applicability-guard/references/examples.md
 memory-applicability-guard/references/research-boundaries.md
 memory-applicability-guard/scripts/guard_decision.py
 release/FILE_INVENTORY.txt
+release/package_manifest.json
 release/public_release_manifest_v1.0.0.json
+scripts/refresh_release.py
 scripts/verify_release.py
+submissions/challenge-map.md
+submissions/entry-template.md
 tests/test_guard_decision.py

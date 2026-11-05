@@ -1,0 +1,24 @@
+{
+  "current_task": "Choose a format for today's workshop notes",
+  "candidate_memory": "The user preferred slides for an earlier workshop",
+  "proposed_memory_action": "USE",
+  "permission": "ALLOWED",
+  "relationship": "SUPERSEDED",
+  "evidence_status": "SUFFICIENT",
+  "robust_action_available": false,
+  "risk": "LOW",
+  "evidence": [
+    {
+      "id": "MEMORY-1",
+      "text": "Earlier workshop: slides were preferred.",
+      "kind": "MEMORY_SOURCE",
+      "decisive": false
+    },
+    {
+      "id": "CURRENT-1",
+      "text": "For today's workshop, the user explicitly requests a plain-text outline instead of slides.",
+      "kind": "USER_STATEMENT",
+      "decisive": true
+    }
+  ]
+}

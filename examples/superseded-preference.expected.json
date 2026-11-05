@@ -1,0 +1,16 @@
+{
+  "boundary": "Research-informed decision-support prototype; not production validated; no autonomous execution or high-risk approval.",
+  "decisive_evidence": [
+    {
+      "id": "CURRENT-1",
+      "kind": "USER_STATEMENT",
+      "text": "For today's workshop, the user explicitly requests a plain-text outline instead of slides."
+    }
+  ],
+  "guard_verdict": "REVISE",
+  "memory_action": "IGNORE",
+  "memory_state": "CLEAR_INAPPLICABLE",
+  "next_step": "Use the newer supplied evidence and do not rely on the superseded memory.",
+  "reason_code": "SUPERSEDED",
+  "resolution_source": "SUPPLIED_EVIDENCE"
+}
