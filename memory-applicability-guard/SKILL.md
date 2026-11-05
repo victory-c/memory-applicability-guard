@@ -1,18 +1,31 @@
 ---
 name: memory-applicability-guard
-description: Audit whether a candidate memory should inform an Agent's recommendation or action, and return PASS, REVISE, ASK_USER, VERIFY_EXTERNAL, or ESCALATE with a structured USE/IGNORE/ASK decision. Use for memory-grounded recommendation, personalization audit, USE/IGNORE/ASK review, superseded memory, cross-domain transfer, permission revocation, evidence gaps, and robust-action analysis. This is a research-informed decision-support prototype, not a production-validated autonomous guard.
+description: Audit whether a candidate memory should inform an agent's recommendation or action, and return PASS, REVISE, ASK_USER, VERIFY_EXTERNAL, or ESCALATE with a structured USE/IGNORE/ASK decision. Use for memory-grounded recommendation, personalization audit, USE/IGNORE/ASK review, superseded memory, cross-domain transfer, permission revocation, evidence gaps, and robust-action analysis. This is a research-informed decision-support prototype, not a production-validated autonomous guard.
 ---
 
 # Memory Applicability Guard
 
+## Installation
+
+Copy this entire `memory-applicability-guard/` directory into your agent's
+supported skill directory. For a local Codex installation, the existing
+`~/.codex/skills/` directory is one option. Keep this file, `scripts/`,
+`references/`, and `agents/` together. Review an existing installation before
+replacing it. Python 3.10 or later is required only for the helper.
+
+Invoke with `$memory-applicability-guard` when the host supports named skills,
+or explicitly ask the agent to follow this file. Supply the current task,
+candidate memory, proposed reliance, permission, scope, risk, and evidence.
+The repository README contains clone and installation commands.
+
 ## Goal
 
-Review a supplied candidate memory before an Agent relies on it. Treat the result as decision support only; never execute or silently rewrite the Agent's answer.
+Review a supplied candidate memory before an agent relies on it. Treat the result as decision support only; never execute or silently rewrite the agent's answer.
 
 ## Extract input
 
 1. Identify `current_task` and `candidate_memory` from supplied context.
-2. Record the Agent's `proposed_memory_action` as `USE`, `IGNORE`, or `ASK`.
+2. Record the agent's `proposed_memory_action` as `USE`, `IGNORE`, or `ASK`.
 3. Classify explicit `permission`, `relationship`, `evidence_status`, `risk`, and robust-action availability.
 4. Preserve evidence IDs and mark only current boundary evidence as decisive. Never treat memory provenance as applicability evidence.
 5. If these structured fields cannot be supported by supplied evidence, label them `UNKNOWN`; do not infer transfer from relevance or similarity.
@@ -67,7 +80,7 @@ Keep `memory_action` separate from the underlying task action. Make the research
 - Truth is not permission; citation is not correct evidence use.
 - Conservative behavior is not always ASK; prefer a supplied robust action.
 - Do not browse, call APIs, read credentials, access private gold, or retrieve hidden memories through this Skill.
-- Do not modify the Agent's original output or execute the proposed action.
+- Do not modify the agent's original output or execute the proposed action.
 - Do not approve medical, legal, financial, employment, insurance, housing, privacy, or safety-critical actions. Escalate high risk.
 - Never claim accuracy improvement, production validation, autonomous safety, or deployment readiness.
 
